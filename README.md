@@ -83,9 +83,9 @@ The only package that cannot be removed this way is Keycloak because other packa
 
 ### Accessing UIs
 
-Argo CD: https://cnoe.localtest.me:8443/argocd
-Argo Workflows: https://cnoe.localtest.me:8443/argo-workflows
-Backstage: https://cnoe.localtest.me:8443/
-Gitea: https://cnoe.localtest.me:8443/gitea
-Keycloak: https://cnoe.localtest.me:8443/keycloak/admin/master/console/
-##
+- Argo CD: https://cnoe.localtest.me:8443/argocd
+- Argo Workflows: https://cnoe.localtest.me:8443/argo-workflows
+- Backstage: https://cnoe.localtest.me:8443/
+- Gitea: https://cnoe.localtest.me:8443/gitea
+- Keycloak: https://cnoe.localtest.me:8443/keycloak/admin/master/console/
+
