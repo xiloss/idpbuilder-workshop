@@ -17,3 +17,22 @@ The city’s automation system (ArgoCD) notices the new blueprint and starts dep
 
 🗺️ Put on the Map (Backstage Component)
 Once everything is running, the restaurant is registered on the city map (Backstage catalog). Now everyone in the city (your developers) can see it, access it, and even request updates or improvements.
+
+## Basic Deployment
+
+Let's start by deploying a simple application to the cluster through Backstage.
+
+Click on the `Create...` button on the left, then select the `Create a Basic Deployment` template.
+
+![img.png](images/backstage-templates.png)
+
+
+In the next screen, type `demo` for the name field, then click Review, then Create. 
+Once steps run, click the Open In Catalog button to go to the entity page. 
+
+![img.png](images/basic-template-flow.png)
+
+In the demo entity page, you will notice a ArgoCD overview card associated with this entity. 
+You can click on the ArgoCD Application name to see more details.
+
+![img.png](images/demo-entity.png)
