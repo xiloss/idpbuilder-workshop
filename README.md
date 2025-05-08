@@ -33,7 +33,7 @@ You can then run idpbuilder with the create argument to spin up your CNOE IDP:
 
 ```
 idpbuilder create --use-path-routing \
-  --package https://github.com/cnoe-io/stacks//ref-implementation
+  --package https://github.com/cloudstation-dev/stacks//ref-implementation
 ```
 
 This will take ~6 minutes for everything to come up. To track the progress, you can go to the ArgoCD UI.
