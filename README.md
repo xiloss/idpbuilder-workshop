@@ -4,7 +4,7 @@
 
 1. https://github.com/cloudstation-dev/stacks.git
    it contains a fork of the base examples from the official idpbuilder source, with some specific modifications and additions
-2. https://github.com/xiloss/idpbuilder-workshop
+2. https://github.com/cloudstation-dev/idpbuilder-workshop.git
    it contains the README and examples instructions for the workshop
 
 ## Install Requirements
@@ -108,7 +108,7 @@ source <(idpbuilder completion bash)
 idpbuilder completion bash > $HOME/.idpbuilder.completion.bash.inc
 printf "
 
-# kubectl shell completion
+# idpbuilder shell completion
 source '$HOME/.idpbuilder.completion.bash.inc'
 " >> $HOME/.bashrc
 source $HOME/.bashrc
@@ -119,6 +119,33 @@ A generic way to start with CNOE IDP using a base setup is to run
 ```bash
 ./idpbuilder create
 ```
+
+#### Install helm (optional)
+
+Although not required, the installation of the helm command can be helpful to debug and troubleshoot existing components, as so as test additional add-ons.
+Use the following commands to install a specific version of helm, the 3.14 for this case:
+
+```bash
+curl -fsSL https://get.helm.sh/helm-v3.14.0-linux-amd64.tar.gz -o helm.tar.gz
+tar -zxvf helm.tar.gz linux-amd64/helm
+sudo mv linux-amd64/helm /usr/local/bin/helm
+rm -rf linux-amd64 helm.tar.gz
+helm version
+```
+
+Additionally, add the completion, current commands are for the bash shell:
+
+```bash
+source <(helm completion bash)
+helm completion bash > $HOME/.helm.completion.bash.inc
+printf "
+
+# helm shell completion
+source '$HOME/.helm.completion.bash.inc'
+" >> $HOME/.bashrc
+source $HOME/.bashrc
+```
+
 
 #### Install Kind (optional)
 
