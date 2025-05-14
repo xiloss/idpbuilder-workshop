@@ -107,7 +107,6 @@ idpbuilder has also a completion snippet for your local shell. For bash case, ex
 source <(idpbuilder completion bash)
 idpbuilder completion bash > $HOME/.idpbuilder.completion.bash.inc
 printf "
-
 # idpbuilder shell completion
 source '$HOME/.idpbuilder.completion.bash.inc'
 " >> $HOME/.bashrc
@@ -139,13 +138,32 @@ Additionally, add the completion, current commands are for the bash shell:
 source <(helm completion bash)
 helm completion bash > $HOME/.helm.completion.bash.inc
 printf "
-
 # helm shell completion
 source '$HOME/.helm.completion.bash.inc'
 " >> $HOME/.bashrc
 source $HOME/.bashrc
 ```
 
+#### Install argocd CLI (optional)
+
+```bash
+curl -sSL -o argocd-linux-amd64 https://github.com/argoproj/argo-cd/releases/latest/download/argocd-linux-amd64
+chmod +x argocd-linux-amd64
+sudo mv argocd-linux-amd64 /usr/local/bin/argocd
+argocd version
+```
+
+Additionally, add the completion, current snippet is for the bash shell
+
+```bash
+source <(argocd completion bash)
+argocd completion bash > $HOME/.argocd.completion.bash.inc
+printf "
+# argocd shell completion
+source '$HOME/.argocd.completion.bash.inc'
+" >> $HOME/.bashrc
+source $HOME/.bashrc
+```
 
 #### Install Kind (optional)
 
