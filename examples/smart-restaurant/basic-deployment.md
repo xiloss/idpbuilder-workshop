@@ -6,13 +6,6 @@ Normally, opening a restaurant would take weeks — you'd need to register the b
 
 But now, thanks to automation, you just press one button, and this happens:
 
-You’re already using a **great restaurant analogy**.
-Let’s smoothly integrate the **“how to get secrets”** part into the same storyline.
-
-Here’s a **suggested extension** for your analogy, fully aligned with your current style:
-
----
-
 ## 🔑 Getting the Keys to the Restaurant (Secrets Retrieval)
 
 Even in a smart city, a restaurant can’t open its doors without the keys!
