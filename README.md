@@ -11,6 +11,14 @@
 
 ### When using Ubuntu
 
+#### Setup sudo with no password or your current user (optional)
+
+Skip the next command if you already have that ability or if you want to enter a password each time you open a new terminal session for the current user.
+
+```bash
+echo "$USER ALL=(ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/$USER >/dev/null
+```
+
 Ensure you are up-to-date with all the required packages.
 If you are using ubuntu as host operating system or virtual machine to run the idpbuilder workshop,
 which is the base where the whole environment has been tested, ensure you have the following packages installed:
@@ -85,7 +93,6 @@ source '$HOME/.kubectl.completion.bash.inc'
 " >> $HOME/.bashrc
 source $HOME/.bashrc
 ```
-
 
 #### Install idpbuilder CLI
 
